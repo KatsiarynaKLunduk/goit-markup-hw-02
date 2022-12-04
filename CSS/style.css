@@ -1,20 +1,13 @@
 body {
   font-family: "Roboto", sans-serif;
-  background: var(--brand-color-beige);
 }
 :root {
   --brand-color-gray: #757575;
-  color: var(--brand-color-gray);
   --brand-color-dark-gray: #2f303a;
-  color: var(--brand-color-dark-gray);
   --brand-color-blue: #2196f3;
-  color: var(--brand-color-blue);
   --brand-color-beige: #e5e5e5;
-  color: var(--brand-color-beige);
   --brand-color-white: #ffffff;
-  color: var(--brand-color-white);
   --brand-color-black: #212121;
-  color: var(--brand-color-black);
 }
 .logo {
   font-family: "Raleway";
@@ -40,6 +33,9 @@ body {
   letter-spacing: 0.02em;
   text-align: left;
 }
+.list {
+  list-style-type: none;
+}
 .link {
   color: var(--brand-color-black);
   text-decoration: none;
@@ -59,18 +55,9 @@ body {
   color: var(--brand-color-blue);
 }
 .title {
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
   background: var(--brand-color-dark-gray);
 }
 .title-text {
-  position: absolute;
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 280px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.3636;
@@ -79,12 +66,7 @@ body {
   text-transform: uppercase;
   color: var(--brand-color-white);
 }
-.button-title {
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
+.title-button {
   background: var(--brand-color-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -96,39 +78,42 @@ body {
   color: var(--brand-color-white);
   cursor: pointer;
 }
-.section-advantages {
+.advantages {
   font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.03em;
+}
+.advantages-title {
+  line-height: 1.14;
   text-transform: uppercase;
   color: var(--brand-color-black);
 }
-.section-advantages-text {
-  font-size: 14px;
+.advantages-text {
   line-height: 1.714;
-  letter-spacing: 0.03em;
   color: var(--brand-color-gray);
 }
-.section-name {
+.direction {
   font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
+  line-height: 1.167;
   letter-spacing: 0.03em;
-  color: var(--brand-color-black);
 }
-.section-name-images {
+.direction-images {
   mix-blend-mode: normal;
 }
-.employee-name {
+.team {
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.team-header {
+  font-size: 36px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--brand-color-black);
 }
-.employee-position {
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+.team-name {
+  color: var(--brand-color-black);
+}
+.team-job {
   color: var(--brand-color-gray);
 }
 .adress-office {
@@ -138,10 +123,6 @@ body {
   color: var(--brand-color-white);
 }
 .footer-bottom {
-  width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 2097px;
   background: var(--brand-color-dark-gray);
   cursor: pointer;
 }
